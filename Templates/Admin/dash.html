@@ -1,0 +1,115 @@
+{% extends "Admin/inherAd.html" %}
+{% load static %}
+
+<!--Extra Headings Below-->
+{% block extra_head %}
+
+<link rel="stylesheet" href="{% static '/Css/dash.css' %}">
+
+{% endblock %}
+
+<!--This is where all items will be held-->
+{% block allDetail %}
+
+<!--This is the section Where lyrics and verses-->
+
+<div class="versLy">
+    
+    <div class="lyWords">
+
+        <h4>Lyrics And Verses</h4>
+
+    </div>
+
+    <div class="lyBtn">
+        
+        <div class="choir" id="chToggle" >
+
+            <img src="{% static '/Images/icons/icons8-music-library-96.png' %}" alt="">
+
+        </div>
+
+        <div class="vers">
+
+            <img src="{% static '/Images/icons/icons8-bible-64.png' %}" alt="">
+
+        </div>
+
+
+    </div>
+
+        
+
+    
+</div>
+
+ <!--the big shadow-->
+<div class="theShadow" id="theShade" >
+
+    <!--The toggle lyrics -->
+    <div class="tLyrics">
+
+        <div class="hedLry">
+
+            <span>CHOIR LYRICS</span>
+
+        </div>
+
+        <form action="">
+
+            <div class="lryContBtn">
+
+                <!--Close the send menu-->
+                <div class="lyclose" id="closeLyricsToggle">
+
+                    <div id="lyclose"><i class="fas fa-regular fa-eject"></i></div>
+
+                </div>
+
+                <!--Refesh the menu-->
+                <div class="lyref">
+
+                    <div id="lyclose"><i class="fas fa-redo"></i></div>
+
+                </div>
+
+                <!--Share lyrics-->
+                <button class="shareLy" >
+
+                    <div id="shreLy"><i class="fas fa-regular fa-share"></i></div>
+
+                </button>
+
+            </div>
+
+
+            <!--The text area region-->
+            <div class="textLy">
+
+                <textarea placeholder="Lyrics" ></textarea>
+
+            </div>
+
+            <!--Paste lyrics in text area-->
+            <div class="paste">
+
+                <div id="pasteIt"><i class="fas fa-regular fa-paste"></i></div>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+<!--This is the js block-->
+{% block js %}
+
+<script src="{% static '/js/dash.js'%}" charset="utf-8"></script>
+
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "inherit.html" %}
+{% load static %}
+
+<!--Extra Headings Below-->
+{% block extra_head %}
+
+<title>TurnPoint ::- CONTACT US</title>
+
+<link rel="stylesheet" href="{% static '/Css/contact.css' %}">
+
+{% endblock %}
+
+<!--Preachings background image-->
+{% block imgs %}
+
+    <div class="img">
+        <img src="{% static '/Images/pages/contTurn.jpg' %}" alt="">
+    </div>
+    <div class="text">
+        <h1>CONTACT US</h1>
+    </div>
+
+{% endblock %}
+
+<!--The rest of the content-->
+
+{% block content %}
+
+<!--Contact Form-->
+
+<div class="contatcF">
+
+    <!--Intro Instructions-->
+    <div class="share">
+        <h4>Share Your Thoughts with Us</h4>
+    </div>
+    <div class="tForm">
+
+        <form action="">
+
+            <!--Input Email-->
+            <div class="em">
+                <input type="email" placeholder="Email" >
+                <div id="fomIc">
+                    <i class="far fa-envelope"></i>
+                </div>
+            </div>
+
+            <!--Input First And Last Name-->
+            <div class="namFor">
+
+                <div class="first">
+                    <input type="text" placeholder="First Name" class="theNam" >
+                    <div id="fomIc">
+                        <i class="fas fa-pen-alt"></i>
+                    </div>
+                </div>
+                <div class="first">
+                    <input type="text" placeholder="Last Name" class="theNam">
+                    <div id="fomIc">
+                        <i class="fas fa-pen-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Input Subject-->
+            <div class="em">
+                <input type="text" placeholder="Subject" >
+                <div id="fomIc">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+            </div>
+
+            <div class="mess">
+                <textarea placeholder="Message" ></textarea>
+                <div id="key">
+                    <i class="far fa-keyboard"></i>
+                </div>
+            </div>
+
+            <!--Submit Button-->
+            <button type="submit" ><span>Send</span></button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!--Separation Line-->
+<div class="lineS">
+    <div class="lin">
+    </div>
+</div>
+
+
+<!--Google Maps-->
+
+<div class="map">
+
+    <div class="head">
+        <h4>Travel And Find Us Here</h4>
+    </div>
+
+    <!--Map Itself-->
+    <div class="itselfMap">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.2467168824309!2d36.86913017769732!3d-1.1697348149427071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3ea0113083ed%3A0xeb64a12450943972!2sTumaini%20La%20Watoto%20CDC%20Primary%20School!5e0!3m2!1sen!2ske!4v1644043545465!5m2!1sen!2ske" width="99%" height="98%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+    </div>
+
+</div>
+
+
+{% endblock %}

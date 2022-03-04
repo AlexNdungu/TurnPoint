@@ -1,0 +1,140 @@
+{% extends "inherit.html" %}
+{% load static %}
+
+<!--Extra Headings Below-->
+{% block extra_head %}
+
+<title>TurnPoint ::- OFFERING & TITHE</title>
+
+<link rel="stylesheet" href="{% static '/Css/offer.css' %}">
+
+{% endblock %}
+
+<!--Preachings background image-->
+{% block imgs %}
+
+    <div class="img">
+        <img src="{% static '/Images/pages/offer.jpg' %}" alt="">
+    </div>
+    <div class="text">
+        <h1>CONTACT US</h1>
+    </div>
+
+{% endblock %}
+
+<!--The rest of the content-->
+
+{% block content %}
+
+<div class="TOSect">
+
+    <!--The Heading Saf-->
+    <div class="headTF">
+        <h4>Safaricom Paybill Services</h4>
+    </div>
+
+    <div class="TheSafForms">
+        <!--Offering Side-->
+        <div class="ofer">
+
+            <div class="semHead">
+                <h4>Offering</h4>
+            </div>
+
+            <!--Form Itself-->
+            <form action="">
+
+                <!--Sender Full Names-->
+                <div class="safIp">
+                    <input type="text" placeholder="Full Name" >
+                    <div id="ofIc">
+                        <i class="fas fa-pen-alt"></i>
+                    </div>
+                </div>
+                <!--Sender Phone Number-->
+                <div class="safIp">
+                    <input type="text" placeholder="Phone Number" >
+                    <div id="ofIc">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                </div>
+                <!--Sender Amount -->
+                <div class="safIp">
+                    <input type="text" placeholder="Amount In Ksh" >
+                    <div id="ofIc">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                </div>
+
+
+                <!--Controls -->
+                <div class="ofCont">
+                    <div class="refOf">
+                        <div id="reOf">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                    </div>
+
+                    <button>Pay</button>
+
+                </div>
+
+
+            </form>
+
+
+        </div>
+        <!--Tithe Side-->
+        <div class="ofer">
+
+            <div class="semHead">
+                <h4>Tithe</h4>
+            </div>
+
+                        <!--Form Itself-->
+                        <form action="">
+
+                            <!--Sender Full Names-->
+                            <div class="safIp">
+                                <input type="text" placeholder="Full Name" >
+                                <div id="ofIc">
+                                    <i class="fas fa-pen-alt"></i>
+                                </div>
+                            </div>
+                            <!--Sender Phone Number-->
+                            <div class="safIp">
+                                <input type="text" placeholder="Phone Number" >
+                                <div id="ofIc">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                            </div>
+                            <!--Sender Amount -->
+                            <div class="safIp">
+                                <input type="text" placeholder="Amount In Ksh" >
+                                <div id="ofIc">
+                                    <i class="fas fa-money-check-alt"></i>
+                                </div>
+                            </div>
+            
+            
+                            <!--Controls -->
+                            <div class="ofCont">
+                                <div class="refOf">
+                                    <div id="reOf">
+                                        <i class="fas fa-redo"></i>
+                                    </div>
+                                </div>
+            
+                                <button>Pay</button>
+            
+                            </div>
+            
+            
+                        </form>
+            
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

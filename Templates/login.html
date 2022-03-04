@@ -1,0 +1,171 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TurnPoint ::- Login</title>
+
+    <link rel="stylesheet" href="{% static '/Css/register.css' %}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/09e314988c.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+    
+    <!--The whole page-->
+    <div class="regPg">
+
+        <!--BackGround Image-->
+
+        <img src="{% static '/Images/pages/into.jpg' %}" alt="">
+
+
+        <div class="allRegIt">
+
+            <!--The logo and sign up-->
+            <div class="logSg">
+
+                <!--The logo-->
+                <div class="logo">
+
+                    <div class="Cr1">
+
+                    </div>
+                    <div class="Cr2">
+
+                    </div>
+
+                </div>
+
+                <!--Sign Up Head-->
+                <h3>Sign In</h3>
+
+
+            </div>
+
+            <!--Sign in with google-->
+            <div class="gogl">
+
+                <!--The Link iteself-->
+                <a href="">
+
+                    <div class="gBTN">
+                        <!--Google icons-->
+                        <div class="gIc">
+                            <img src="{% static '/Images/icons/google.png' %}" alt="">
+                        </div>
+    
+                        <span>Sign In Using Google</span>
+    
+                    </div>
+
+                </a>
+
+            </div>
+
+            <!--The Or-->
+            <div class="orPt">
+
+                <h4>OR</h4>
+
+            </div>
+
+            <!--Form Part-->
+            <div class="frmReg">
+
+                <!--To change Form Height in Login-->
+                <style>
+
+                    .frmReg {
+                        height: 230px;
+                    }
+
+                </style>
+
+                <!--The form itself-->
+                <form action="">
+
+                    <!--The Input Section-->
+                    <div class="regInp">
+
+                        <!--The Icon-->
+                        <div id="regIc">
+                            <i class="fas fa-regular fa-user"></i>
+                        </div>
+
+                        <!--The Input Part-->
+                        <input type="text" placeholder="Phone Number">
+
+                    </div>
+
+                    <!--The Input Section-->
+                    <div class="regInp">
+
+                        <!--The Icon-->
+                        <div id="regIc">
+                            <i class="fas fa-regular fa-unlock"></i>
+                        </div>
+
+                        <!--The Input Part-->
+                        <input type="password" placeholder="Password">
+
+                    </div>
+
+
+                    <!--Submit Button-->
+
+                    <button>Sign In</button>
+
+
+                </form>
+
+            </div>
+
+            <!--have account-->
+            <div class="have">
+                <span>Have An Account?</span>
+                <a href=""><h5>Login</h5></a>
+            </div>
+
+            <!--Social Media Section-->
+            <div class="soc">
+
+                <!--Facebook-->
+                <a href="">
+
+                    <div class="socIm">
+                        <img src="{% static '/Images/icons/icons8-instagram-240.png' %}" alt="">
+                    </div>
+
+                </a>
+
+                <!--Instagram-->
+
+                <a href="">
+
+                    <div class="socIm">
+                        <img src="{% static '/Images/icons/icons8-instagram-240.png' %}" alt="">
+                    </div>
+
+                </a>
+
+            </div>
+                
+        </div>
+
+        
+
+    </div>
+
+</body>
+</html>

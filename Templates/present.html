@@ -1,0 +1,90 @@
+{% extends "inherit.html" %}
+{% load static %}
+
+<!--Extra Headings Below-->
+{% block extra_head %}
+
+<title>TurnPoint ::- PRESENTATION</title>
+
+<link rel="stylesheet" href="{% static '/Css/preach.css' %}">
+
+{% endblock %}
+
+<!--Preachings background image-->
+{% block imgs %}
+
+    <div class="img">
+        <img src="{% static '/Images/introSlider/band.jpg' %}" alt="">
+    </div>
+    <div class="text">
+        <h1>PRESENTATION</h1>
+    </div>
+
+{% endblock %}
+
+<!--The rest of the content-->
+
+{% block content %}
+
+<!--Where the preachings will load-->
+
+<div class="searchC">
+
+    <form action="">
+
+        <input class="placSerC" type="text" placeholder="Enter Preaching Title">
+
+        <button class="secBtnC" ><div id="serC"><i class="fas fa-search"></i></div></button>
+
+    </form>
+
+</div>
+
+<!--This are the preaching recordings-->
+
+<div class="preachs">
+
+    <!--Individual Recordings-->
+    <div class="itPr">
+
+        <!--Recording image-->
+        <div class="recImg">
+            <img src="{% static '/Images/introSlider/band.jpg' %}" alt="">
+        </div>
+        <!--The Recording Lables-->
+        <div class="lableRec">
+            <div class="nam">
+                <h5 class="redHed" >Bishop Hinga</h5>
+                <h3 class="redHed" >Mwena Wakwa</h3>
+                <span>26 Jan 2022</span>
+            </div>
+            <div class="contRec">
+                <!--Watch Button-->
+                <div class="watchC">
+                    <a href=""><span>Watch</span></a>
+                </div>
+                <!--Copy Link-->
+                <div class="presCl">
+                    <div id="copyLink">
+                        <i class="fas fa-link"></i>
+                    </div>
+                </div>
+                <!--Watch Later-->
+                <div class="presCl">
+                    <div id="copyLink">
+                        <i class="far fa-clock"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+</div>
+
+<div class="nextPage">
+    
+</div>
+
+{% endblock %}

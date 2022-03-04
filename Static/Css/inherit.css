@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Introduction top */
+
+.intUp {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0,0.3);    
+}
+
+        /* The navigation */
+
+.nav {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+        /* The Cross */
+
+.logo {
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    border: 5px #191EBB solid;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* The NavButtons */
+
+.navigBt {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+.Cr1 {
+    width: 8px;
+    height: 80px;
+    background-color: #eeeeee;
+    position: absolute;
+    border-radius: 10px;
+}        
+
+.Cr2 {
+    width: 45px;
+    height:8px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 25px;
+    border-radius: 10px;
+}        
+
+/* User Icon */
+
+#user {
+    font-size: 43px;
+    color: #eeeeee;
+}
+
+
+ /* Nav Change */
+
+ .bagger {
+    position: relative;
+    height: 70px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}    
+       /* Barsss */
+.bagger .bar {
+    width: 20px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #eeeeee;
+    transition: all .5s ease-in-out;
+}
+
+.bagger .bar::after,.bagger .bar::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #eeeeee;
+    transition: all .5s ease-in-out;
+}
+
+
+
+.bagger .bar::before {
+    transform: translateY(-15px);
+}
+
+.bagger .bar::after {
+    transform: translateY(15px);
+}
+
+.bagger.open .bar {
+    transform: translateX(-60px);
+    background: none;
+}
+
+.bagger.open .bar::before {
+    transform:  rotate(45deg) translate(42px ,-42px);
+}
+
+.bagger.open .bar::after {
+    transform:  rotate(-45deg) translate(42px ,42px);
+}
+
+/* Image BackGround */
+
+.backImg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h1 {
+    font-size: 80px;
+    font-weight: 900;
+    color: #eeeeee;
+    z-index: 2;
+}
+
+
+.sep {
+    width: 100%;
+    height: 200vh;
+}
+
+
+/* FOOTER */
+
+.fott {
+    width: 100%;
+    height: 350px;
+    background-color: #1b1b1b;
+    display: flex;
+}
+
+.fott h4 {
+    color: rgb(228, 228, 228);
+}
+
+.fot1,.fot2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fot1 form {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Style Inputs */
+
+.input {
+    width: 300px;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+}
+
+.fot1 input {
+    outline: none;
+    margin: 6px;
+    color: #5256a8;
+    font-weight: 500;
+    background-color: rgb(228, 228, 228);
+}
+
+input[type='text' i ],input[type='email' i ] {
+    padding-left: 10px;
+    font-size: 17px;
+    
+}
+
+input::placeholder {
+    color: #1b1b1b;
+}
+
+
+/* Submit Button */
+
+.suBt {
+    width: 300px;
+    height: 45px;
+    border-radius: 45px;
+    border: none;
+    transition: transform .6s;
+}
+
+.suBt:hover {
+    transform: scale(1.1);
+}
+
+input[type=submit] {
+    color: #5256a8;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+
+/* THE LINK SECTION */
+
+.link {
+    width: 200px;
+    height: 40px;
+    border: 2px solid rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    margin: 5px;
+    transition: transform .6s;
+}
+
+.link:hover {
+    transform: scale(1.2);
+}
+
+#icn {
+    font-size: 23px;
+    color: rgb(228, 228, 228);
+    margin-left: 20px;
+}
+
+.link span {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(228, 228, 228);
+    margin-right: 20px;
+}
+
+/* LOWER FOOTER */
+
+.low {
+    width: 100%;
+    height: 80px;
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loMine {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cpr {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+#copy {
+    font-size: 20px;
+    color: rgb(228, 228, 228);
+
+}
+
+.cpr span {
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(228, 228, 228);
+}
+
+.FotLg {
+    transform: scale(0.6);
+}
+
+/* Terms And Privacy */
+
+.term {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.term span {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(228, 228, 228);
+}

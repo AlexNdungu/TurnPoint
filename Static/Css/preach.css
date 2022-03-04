@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Search Bar Section */
+
+.search {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.search input::placeholder {
+    color: #5256a8;
+}
+
+.search form {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.search input {
+    color: #5256a8;
+}
+
+.placSer {
+    width: 400px;
+    height: 40px;
+    border: 2px solid #5256a8;
+    border-radius: 7px;
+    outline: none;
+}
+
+/* The Search Icon */
+#ser {
+    font-size: 20px;
+    color: #5256a8;
+}
+
+.search form button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #5256a8;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: white;
+    transition: transform .3s;
+}
+
+.search form button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Band Red */
+
+.searchC {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchC input::placeholder {
+    color: #d13b3b;
+}
+
+.searchC form {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.searchC input {
+    color: #d13b3b;
+}
+
+.placSerC {
+    width: 400px;
+    height: 40px;
+    border: 2px solid #d13b3b;
+    border-radius: 7px;
+    outline: none;
+}
+
+/* The Search Icon */
+#serC {
+    font-size: 20px;
+    color: #d13b3b;
+}
+
+.searchC form button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #d13b3b;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: white;
+    transition: transform .3s;
+}
+
+.searchC form button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* THIS ARE THW VIDEOS */
+
+.preachs {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual recordings */
+
+.itPr {
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    max-height: 1200px;
+}
+
+/* Record Image */
+
+.recImg {
+    width: 300px;
+    height: 200px;
+    border-radius: 7px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.recImg img {
+    width: 100%;
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+/* The Lable */
+
+.lableRec {
+    width: 280px;
+    height: 200px;
+}
+
+.nam {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nam h5 {
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #5256a8;
+}
+
+.nam h3 {
+    margin-left: 10px;
+    color: #5256a8;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.nam span {
+    color: #919191;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* The lable Button section */
+
+.contRec {
+    width: 75%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.watch {
+    width: 100px;
+    height: 35px;
+    background-color: #5256a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform .4s;
+}
+
+.watch:hover {
+    transform: scale(1.2);
+}
+
+.watch span {
+    font-weight: 500;
+    color: #e6e6e6;
+}
+
+/* Circle controls */
+
+.copyLink {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: #5256a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.copyLink:hover {
+    transform: scale(1.2);
+}
+
+#copyLink {
+    color: #e6e6e6;
+}
+
+/* Change Color To red for Presentation youtube */
+.watchC {
+    width: 100px;
+    height: 35px;
+    background-color: #d13b3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform .4s;
+}
+
+.watchC:hover {
+    transform: scale(1.2);
+}
+
+
+.watchC span {
+    font-weight: 500;
+    color: #e6e6e6;
+}
+
+.presCl {
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: #d13b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.presCl:hover {
+    transform: scale(1.2);
+}
+
+/* Heading songs */
+.nam .redHed {
+    color: #d13b3b;
+}
+
+/* Next Page Buttons */
+
+.nextPage {
+    width: 100%;
+    height: 150px;
+}
